@@ -1,0 +1,165 @@
+
+
+@desc-font:  16px "Microsoft Yahei",Arial,Helvetica,sans-serif;
+
+ul, ol { 
+	list-style-type: none;
+}
+a:link { 
+	color: #515151;
+	text-decoration:none;
+}
+
+.hd { 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	z-index: 1; 
+	background: rgba(0,0,0,0.8); 
+	color: white; 
+	width: 100%; 
+	height: 60px; 
+}
+
+.ml-logo { 
+	float: left; 
+	width: 190px; 
+	height: 40px; 
+	margin: 13px 0; 
+	font-size: 26px;
+}
+.center-wrap { 
+	position: relative;
+	z-index: 1; 
+	width: 1040px; 
+	height: 100%; 
+	margin: 0 auto;
+	nav {
+		float:left; 
+		.myMenu li {
+			float: left;
+			&.active {
+				a {
+					background: #868e63; color: #000; 
+				}
+			};
+			a {
+				display: block;  padding: 0 20px; line-height: 60px; cursor:pointer; color: #ffffff;
+				&:hover {
+					background: #868e63; color: #000;  
+				}
+			}
+		};
+	};
+	.buy-now {
+		position: absolute; 
+		right: 0; top: 10px; 
+		width: 100px; height: 36px; 
+		line-height: 36px; 
+		text-align: center; 
+		background-color: #3db1fa;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.desc { 
+	position: relative; 
+	z-index: 1;
+
+}
+.section { 
+	width:100;
+	overflow: hidden;
+	h1 {
+		margin-bottom: 20px; line-height: 1.4; font-size: 40px; font-weight: 400;
+	};
+	p {
+		line-height: 25px;
+	}
+}
+
+.banner { 
+	background: url(../../../assets/images/b-1.jpg) center no-repeat;
+	.banner-desc { 
+		position: absolute; width: 386px; margin: 0 auto; color: #FFF; bottom: 110px; left: 50%; margin-left: 215px;
+		h1 {
+			text-align: center;
+		};
+		p {
+			font:@desc-font;
+		}
+	}
+}
+
+.office { 
+	background: url(../../../assets/images/b-2.jpg) center no-repeat;
+	.office-desc {
+		width: 574px; margin: 0 auto; padding-top: 126px; text-align: center;
+		p {
+			font:@desc-font;
+		}
+	}
+}
+
+.wood { 
+	background: url(../../../assets/images/b-3.jpg) center no-repeat;
+	.wood-desc { 
+		padding-top: 50%; 
+		width: 400px;
+		p {
+			font:@desc-font;
+		}
+	}
+}
+
+.square { 
+	background: url(../../../assets/images/b-4.jpg) center no-repeat;
+	.square-desc { 
+		position: absolute; 
+		left:-338px; 
+		padding-top: 23%; 
+		width: 490px; 
+		z-index: 1;
+		p {
+			font:@desc-font;
+		}
+	}
+}
+
+.footer-link { 
+	padding: 30px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;text-align: center;
+	dl {
+		float: left; width: 30.9%;
+	};
+	dt {
+		line-height: 45px; font-weight: 700;
+	};
+	dd {
+		line-height: 28px;
+	};
+	a {
+		color: #515151; text-decoration: none;
+		&:hover {
+			color: #31a5e7;
+		}
+	};
+}
+
+.copyright { 
+	padding: 20px 0; 
+	text-align: center;
+}
+
+/*#fp-nav ul li:first-child, #fp-nav ul li:last-child { display: none;}*/
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+    background: #fff; /*活动导航的颜色*/
+}  
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #4da5ff;/*非活动导航的颜色*/
+    height: 8px;
+    width: 8px;
+    margin: -4px 0 0 -4px;
+}

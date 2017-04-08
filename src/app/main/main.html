@@ -1,0 +1,93 @@
+<div class="hd">
+  <div class="center-wrap">
+  <h2 class="ml-logo">Private website</h2>
+  <nav>
+    <ul class="myMenu">
+      <li data-menuanchor="page1" class="active"><a href="#page1">办公</a></li>
+      <li data-menuanchor="page2"><a href="#page2">休闲</a></li>
+      <li data-menuanchor="page3"><a href="#page3">FEAR</a></li>
+      <li data-menuanchor="page4"><a href="#page4">眺望</a></li>
+    </ul>
+  </nav>
+  <a class="buy-now" href="javascript:" ng-click="main.register()">登录/注册</a>
+  </div>
+</div>
+
+<div id="dowebok">
+<div class="section banner">
+  <div class="center-wrap">
+    <div class="desc banner-desc">
+      <h1>生活</h1>
+      <p>你是否已忘了为什么来？不知道该往哪儿去？&mdash;&mdash;是否还记得坚持的理由，那是梦想的火花在指尖燃烧着啊。</p>
+    </div>
+  </div>
+</div>
+<div class="section office">
+  <div class="center-wrap">
+    <div class="desc office-desc">
+      <h1>小憩时光</h1>
+      <p>一个人因孤独产生狭隘&mdash;&mdash;一群人，因交流迸发思想的火花。知道越多就懂的越少，来吧，发出自己的声音。</p>
+    </div>
+  </div>    
+  <!-- <div class="slide"> Slide 1 </div>
+  <div class="slide"> Slide 2 </div>
+  <div class="slide"> Slide 3 </div>
+  <div class="slide"> Slide 4 </div> -->
+</div>
+<div class="section wood">
+  <div class="center-wrap">
+    <div class="desc wood-desc">
+      <h1>在路上</h1>
+      <p>朝九晚五，一座生活中的牢笼，上班下班，永远在路，见过凌晨的晨光，见过星光的闪耀，何不约上两三好友&mdash;&mdash;无拘放纵！。</p>
+    </div>
+  </div>
+</div>
+<div class="section square">
+  <div class="center-wrap">
+    <div class="desc square-desc">
+      <h1>无声的呐喊</h1>
+      <p>是否很累？生活的琐碎是否侵扰身边？是否想去做什么却总忘了去做？总是想去行动，却总是中途而废，人生不需要理由，要的是你的态度。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section footer fp-auto-height">
+  <div class="footer-link">
+    <div class="center-wrap">
+      <div class="clearfix">
+        <dl>
+          <dt>关于</dt>
+          <dd><a href="javascript:">法律声明</a></dd>
+        </dl>
+
+        <dl>
+          <dt>关注</dt>
+          <dd><a href="javascript:">新浪微博</a></dd>
+        </dl>
+
+        <dl>
+          <dt>联系电话</dt>
+          <dd>xxx-xxx-xxxx</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright center-wrap">
+    <p>©2017 私人设计，如有侵权请联系我；未经允许不得私自作为商业用途!</p>
+  </div>
+</div>
+</div>
+<script>
+  $(function(){
+      $('#dowebok').fullpage({
+        // 'sectionsColor': [''],//设置背景色
+        'navigation': true, //是否显示导航
+        'anchors':['page1','page2','page3','page4'],
+        'navigationTooltips':['办公','休闲','FEAR','眺望','联系'],
+        'menu':'.myMenu',
+        'verticalCentered':true,//内容是否垂直居中
+        'resize':true//字体是否随着窗口缩放而缩放        
+      });
+    });
+</script>

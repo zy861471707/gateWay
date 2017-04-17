@@ -16,7 +16,7 @@
         controllerAs: 'main'
       });
     //登录模块路由
-    $stateProvider.state('home.login', {
+    $stateProvider.state('login', {
       url: '/login',
       templateUrl: 'app/components/login/login.html',
       controller: 'LoginController',

@@ -11,7 +11,7 @@
     var vm = this;
   	vm.register = function(){
       console.log(11111)
-  		$state.go('home.login');
+  		$state.go('login');
   	};
   };
 })();

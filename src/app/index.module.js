@@ -17,5 +17,5 @@
 	 'gateWay.main'
     ]);
     angular.module('gateWay.main', []);
-    angular.module('gateWay.components', []);
+    angular.module('gateWay.components', ['gateWay.login']);
 })();

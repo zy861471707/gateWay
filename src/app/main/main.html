@@ -9,7 +9,7 @@
       <li data-menuanchor="page4"><a href="#page4">眺望</a></li>
     </ul>
   </nav>
-  <a class="buy-now" href="javascript:" ng-click="main.register()">登录/注册</a>
+  <button class="buy-now" ng-click="main.register()" data-toggle="modal" data-target="#myRegisterModal">登录/注册</button>
   </div>
 </div>
 
@@ -79,15 +79,33 @@
 </div>
 </div>
 <script>
-  $(function(){
-      $('#dowebok').fullpage({
-        // 'sectionsColor': [''],//设置背景色
-        'navigation': true, //是否显示导航
-        'anchors':['page1','page2','page3','page4'],
-        'navigationTooltips':['办公','休闲','FEAR','眺望','联系'],
-        'menu':'.myMenu',
-        'verticalCentered':true,//内容是否垂直居中
-        'resize':true//字体是否随着窗口缩放而缩放        
-      });
+$(function(){
+  $('#dowebok').fullpage({
+      // 'sectionsColor': [''],//设置背景色
+      'navigation': true, //是否显示导航
+      'anchors':['page1','page2','page3','page4'],
+      'navigationTooltips':['办公','休闲','FEAR','眺望','联系'],
+      'menu':'.myMenu',
+      'verticalCentered':true,//内容是否垂直居中
+      'resize':true//字体是否随着窗口缩放而缩放        
     });
+});
 </script>
+<!-- 登录注册模态框 -->
+<div class="modal fade" id="myRegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
